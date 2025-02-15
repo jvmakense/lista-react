@@ -8,14 +8,14 @@ function Header() {
     return(
         <HeaderStyles>
             <>
-            <div>
+            <div className="titulo">
                 <h1>Lista de contatos</h1>
             </div>
-            <div>
+            <form>
                 <input id="nome" required type="text" placeholder="Nome" />
                 <input id="numero" required type="number" placeholder="numero" />
                 <input id="email" required type="e-mail" placeholder="E-mail"/>
-            </div>
+            </form>
             <button onClick={salvar}>Salvar</button>
             </>
         </HeaderStyles>
