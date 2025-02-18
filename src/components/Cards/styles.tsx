@@ -18,9 +18,34 @@ export const CardsStyles = styled.div`
     }
     .card-header {
         width: 100%;
-
+        display: flex;
+        justify-content: space-between;
         h3 {
             margin: 0;
+        }
+
+        .btns {
+            button {
+                margin: 0 8px 8px;
+                background-color: #888;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                padding: 4px 8px;
+
+                &:hover {
+                    background-color: #aaa;
+                    cursor: pointer;
+                    box-shadow: 3px 3px 3px #11111160;
+                }
+                &.btn-excluir {
+                    background-color: #df463e;
+                &:hover {
+                    background-color: #dd746f;
+                    cursor: pointer;
+                }
+                }
+            }
         }
     }
     .card-body {
