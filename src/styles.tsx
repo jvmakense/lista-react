@@ -11,9 +11,3 @@ const GlobalStyles = createGlobalStyle`
     }
 `
 export default GlobalStyles
-
-
-// Primária: Verde Oliva (#4F6F52)
-// Secundária: Bege (#F5F5DC)
-// Texto: Cinza Grafite (#333333)
-// Destaque: Verde Claro (#D4E09B)

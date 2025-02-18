@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 
+
 type Contact = {
     nome: string;
     numero: number;
@@ -21,7 +22,6 @@ export const contactsSlice = createSlice({
     reducers: {
         addContact: (state, action) => {
             state.value.push(action.payload);
-
         }
     }
 })

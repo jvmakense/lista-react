@@ -1,6 +1,7 @@
 import { CardsStyles } from "./styles"
 
-function Cards({number}) {
+function Cards({number, data}) {
+    
     return(
         <>
         <CardsStyles>
@@ -10,9 +11,9 @@ function Cards({number}) {
                     <h3>Contato {number}</h3>
                 </div>
                 <div className="card-body">
-                    <p>joao</p>
+                    <p>{data.nome}</p>
                     <p className="margin">numero</p>
-                    <p>email</p>
+                    <p>{data.nome}</p>
                 </div>
             </div>
         </CardsStyles>

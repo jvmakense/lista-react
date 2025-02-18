@@ -1,10 +1,10 @@
 import { HeaderStyles } from "./styles"
+import { contactsSlice } from "../store/contactsSlice"
+import { addContact } from "../store/contactsSlice";
+import { useDispatch } from "react-redux"
 function Header() {
 
-    function salvar() {
-        alert('clicou')
-        
-    }
+    const dispach = useDispatch();
     return(
         <HeaderStyles>
             <>
@@ -16,7 +16,7 @@ function Header() {
                 <input id="numero" required type="number" placeholder="numero" />
                 <input id="email" required type="e-mail" placeholder="E-mail"/>
             </form>
-            <button onClick={salvar}>Salvar</button>
+            <button onClick={() => dispach(addContact())}>Salvar</button>
             </>
         </HeaderStyles>
 
