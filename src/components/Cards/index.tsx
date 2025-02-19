@@ -1,6 +1,6 @@
 import { CardsStyles } from "./styles"
 import { useDispatch } from "react-redux"
-import { removeContact } from "../store/contactsSlice"
+import { removeContact, editContact } from "../store/contactsSlice"
 
 function Cards({data}) {
     
@@ -14,7 +14,7 @@ function Cards({data}) {
                 <div className="card-header">
                     <h3>Contato {data.id}</h3>
                     <div className="btns">
-                        <button className="btn-editar">Editar</button>
+                        <button onClick={() => dispatch(editContact(data.id))} className="btn-editar">Editar</button>
                         <button onClick={() => dispatch(removeContact(data.id))}  className="btn-excluir">Excluir</button>
                     </div>
                 </div>
